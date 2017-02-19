@@ -1,0 +1,19 @@
+{
+  "name": "louvainlinux-site",
+  "version": "0.0.1",
+  "description": "Website of the Louvain-li-Nux KAP",
+  "author": "Denis Pettens <denis.pettens@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syvido/louvainlinux-site"
+  },
+  "bugs": {
+    "url": "https://github.com/syvido/louvainlinux-site/issues"
+  }
+}
