@@ -158,3 +158,10 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
+
+### App ###
+public/css/*
+public/images/*
+
+!public/css/.gitkeep
+!public/images/.gitkeep

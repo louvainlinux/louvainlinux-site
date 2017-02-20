@@ -1,6 +1,6 @@
 {
   "name": "louvainlinux-site",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Website of the Louvain-li-Nux KAP",
   "author": "Denis Pettens <denis.pettens@gmail.com>",
   "license": "GPL-3.0",
@@ -15,5 +15,10 @@
   },
   "bugs": {
     "url": "https://github.com/syvido/louvainlinux-site/issues"
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "^2.3.2",
+    "serve-static": "^1.11.2"
   }
 }
