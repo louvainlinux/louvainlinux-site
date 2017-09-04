@@ -14,6 +14,7 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const serveStatic = require('serve-static');
+const compression = require('compression');
 const routes = require('./config/routes');
 
 /**
@@ -29,6 +30,11 @@ let app = express();
  */
 
 module.exports = app;
+
+/**
+ * Compress all responses bodies
+ */
+app.use(compression());
 
 /**
  * Configuration view engine and folder
