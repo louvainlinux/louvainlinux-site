@@ -1,0 +1,140 @@
+/*
+ * louvainlinux-site
+ * GPL-3.0 License
+ */
+
+.header
+    width 100%
+    height 90px
+    border-bottom 2px solid $skin-color
+
+/** Logo **/
+.header__logo
+    position absolute
+    display block
+    left 50%
+    height 50px
+    margin 20px 0
+    line-height @height
+    font-family $font-open-sans
+    font-size 1.2rem
+    font-variant small-caps
+    transform translateX(-50%)
+
+    img
+        float left
+        height 50px
+        margin-right 10px
+
+    span
+        display none
+        float left
+
+/** Hamburger icon **/
+.header__icon
+    position relative
+    display block
+    float left
+    width 54px
+    height 54px
+    margin 18px 0
+    border-radius 50%
+    cursor pointer
+    transition transform 0.5s
+
+    span, span::before, span::after
+        position absolute
+        display block
+        width 22px
+        height 2px
+        background-color $font-color
+
+    span
+        top 50%
+        left 50%
+        background $transition-duration
+        transform translateX(-50%) translateY(-50%)
+        transition transform $transition-duration,
+        z-index 2
+
+        &::before, &::after
+            content ''
+            top 0
+            left 0
+            transform translateY(-6px)
+            transition transform $transition-duration
+            transform-origin 50% 50%
+
+        &::after
+            transform translateY(6px)
+
+    svg
+        position relative
+        fill transparent
+        stroke-width 2px
+        stroke $font-color
+        stroke-dasharray 170
+        stroke-dashoffset 170
+        transition transform $transition-duration, stroke-dashoffset $transition-duration
+        z-index 1
+
+    &:hover
+        span
+            &::before
+                transform translateY(-8px)
+    &:hover
+        span
+            &::after
+                transform translateY(8px)
+
+.with--sidebar
+    .header__icon
+        transform rotate(180deg)
+
+        span
+            background transparent
+
+            &::before
+                transform translateY(0) rotate(45deg)
+
+            &::after
+                transform translateY(0) rotate(-45deg)
+
+        svg
+            transform rotate(-180deg)
+            stroke-dashoffset 0
+
++above($mobile)
+    .header__logo
+        span
+            display block
+
++above($mobile-landscape)
+    .header__logo
+        height 60px
+        margin 15px 0
+        line-height @height
+        font-size 1.6rem
+
+        img
+            height 60px
+
++above($desktop)
+    .header
+        height 120px
+
+    .header__logo
+        position static
+        display block
+        float left
+        height 90px
+        line-height @height
+        font-size 1.8rem
+        transform translateX(0)
+
+        img
+            height @height
+
+    /** Icon Hamburger **/
+    .header__icon
+        display none

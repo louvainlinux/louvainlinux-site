@@ -1,0 +1,129 @@
+/** Description **/
+.home__title
+    font-size 2rem
+    font-style italic
+    text-align center
+
+.home__description
+    padding 0
+    font-size 1.1rem
+    text-align justify
+
+    a
+        link $skin-color
+        hover-color $skin-color-darken true
+
+.home__contact
+    margin $element-margin 0
+    padding 15px
+    background $skin-color
+    border-radius $border-radius
+    font-size 1.2rem
+    font-family $font-open-sans
+    text-align center
+    color #ffffff
+
+    p
+       display block
+       margin 10px 0 5px 0
+
+    a
+       display inline-block
+       margin 10px auto 5px auto
+       padding 10px 15px
+       border-radius $border-radius
+       background $skin-alternative-color
+       hover-color $skin-alternative-color-darken
+       transition background-color $transition-duration
+
+/** Slider **/
+.home__slider, .home__slider~.divider
+    display none
+
+/** Features **/
+.home__features
+    clearfix()
+
+.home__feature
+    margin-bottom $element-margin
+    padding 20px 0
+
+.home__feature__icon
+    stack()
+
+    i
+        display block
+        width 90px
+        height 90px
+        margin 0 auto 20px auto
+        padding 0
+        border-radius 100%
+        background $skin-alternative-color
+        line-height 90px
+        font-size 45px
+        text-align center
+        color #ffffff
+
+.home__feature__text
+    stack()
+
+    h2
+        margin 20px 0 5px 0
+        text-align center
+
+    p
+        margin-bottom 0
+        text-align justify
+
+    a
+        link: $skin-color 'underline'
+        hover-color: $skin-color-darken true
+
++above($tablet)
+    .home__title
+        font-size 2.2rem
+
+    .home__slider, .home__slider~.divider
+        display block
+
++between($tablet, ($desktop - 1))
+    .home__feature__icon
+        unstack()
+        column(1/4 1/2)
+
+        i
+            width 65px
+            height 65px
+            line-height 65px
+            font-size 33px
+
++above($tablet)
+    .home__feature
+        column(1/2, $cycle: 2)
+
+    .home__feature__icon
+        unstack()
+        column(1/4 1/2)
+
+        i
+            margin 0
+
+    .home__feature__text
+        unstack()
+        column(3/4 1/2)
+
+        h2
+            margin-top 0
+            text-align left
+
++above($desktop)
+    .home__description
+        margin $element-margin 200px
+
+    .home__contact
+        p
+            display inline-block
+            margin 0
+
+        a
+           margin 0 0 0 $element-margin

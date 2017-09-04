@@ -1,0 +1,129 @@
+/*
+ * louvainlinux-site
+ * GPL-3.0 License
+ */
+
+// Default value variable
+$menu-width ?= 250px
+$menu-background-color ?= #37474F
+$menu-background-hover-color ?= rgba(0, 0, 0, 0.25)
+$menu-font-size ?= 1rem
+$menu-font-weight ?= 600
+$menu-font-color ?= #ffffff
+
+.site-pusher
+    transform translateX(0)
+    transition transform $transition-duration
+
+.site-container
+    height 100%
+    overflow-x hidden
+    -webkit-overflow-scrolling touch
+
+.site-cache
+    transition background $transition-duration
+
+.menu
+    position absolute
+    display block
+    top 0
+    bottom 0
+    left 0
+    width $menu-width
+    height auto
+    margin 0
+    padding 10px 0
+    background $menu-background-color
+    font-size $menu-font-size
+    font-weight $menu-font-weight
+    color $menu-font-color
+    transform translateX($menu-width * -1)
+
+    ul
+        margin 0
+        padding 0
+        list-style-type none
+
+.menu__link, .menu__sublink
+    display block
+    line-height 50px
+    text-transform uppercase
+    transition color $transition-duration
+
+    &:hover
+        background $menu-background-hover-color
+
+.menu__link
+    padding-left 15px
+
+.menu__sublink
+    padding-left 30px
+
++below($desktop)
+    .with--sidebar .site-pusher
+        transform translateX($menu-width)
+
+    .with--sidebar .site-cache
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        background rgba(0, 0, 0, 0.6)
+        z-index 1000
+
++above($desktop)
+    .menu
+        position static
+        float right
+        width auto
+        height 90px
+        margin 15px 0
+        padding 0
+        background inherit
+        transform translateX(0)
+        z-index 1000
+
+    // First Level
+    .menu > ul > li
+        position relative
+        display inline-block
+        padding 0 12px
+
+        &:last-child
+            padding-right 0
+
+        // Second Level
+        ul
+            position absolute
+            top 80%
+            left 0
+            width 240px
+            margin-top 30px
+            background $menu-background-color
+            visibility hidden
+            opacity 0
+            transition all $transition-duration
+
+        &:hover
+            ul
+                margin-top 0
+                visibility visible
+                opacity 1
+
+
+    .menu__link
+        display inline-block
+        height 90px
+        padding 0
+        line-height @height
+        color $font-color
+
+        &:hover
+            background inherit
+            color $skin-color
+
+    .menu__sublink
+        padding 0 12px
+        font-size 1rem
+        text-transform none

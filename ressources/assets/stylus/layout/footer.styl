@@ -1,0 +1,41 @@
+.footer
+    padding 10px 0
+    border-top 2px solid $skin-color
+    text-align center
+
+.footer__link
+    display block
+    margin 15px 0
+    font-weight 600
+    transition color $transition-duration
+
+    &:hover
+        color $skin-color
+
+    i
+        margin-right 5px
+
+.footer__icons
+    margin 15px 0
+
+    a
+        padding: 0 8px
+        font-size 1.4rem
+        transition color $transition-duration
+
+        social-color('facebook', $facebook)
+        social-color('twitter', $twitter)
+        social-color('google-plus', $google-plus)
+        social-color('github', $github)
+
++above($tablet)
+    .footer__link
+        display inline-block
+        margin 0
+        padding 0 8px
+
+    .footer__icons
+        display inline-block
+
+        a
+            font-size 1.3rem

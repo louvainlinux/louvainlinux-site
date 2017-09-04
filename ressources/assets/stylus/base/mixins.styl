@@ -1,0 +1,16 @@
+/*
+ * louvainlinux-site
+ * GPL-3.0 License
+ */
+
+alert-color(gradient-color-start , gradient-color-end, border-color, color = false)
+    background gradient-color-start
+    background gradient-color-end linear-gradient(180deg, gradient-color-start, gradient-color-end) repeat-x
+    border-color border-color
+
+    unless color
+        color color
+
+social-color(name, color)
+    &.{name}:hover
+        color color

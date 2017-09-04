@@ -14,5 +14,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "font-awesome": "^4.7.0"
+  }
 }

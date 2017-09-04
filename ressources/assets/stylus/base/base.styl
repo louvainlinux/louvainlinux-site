@@ -1,0 +1,112 @@
+/*
+ * louvainlinux-site
+ * GPL-3.0 License
+ */
+
+/* ==========================================================================
+   Base rules
+   ========================================================================== */
+
+*
+    box-sizing border-box
+
+html,body
+    height 100%
+    background $background-color
+    color $font-color
+    font-family $font-source-sans-pro
+    font-size $font-size
+    line-height $line-height
+
+.container
+    center($container-width, $container-padding)
+    display flex
+    height 100%
+    min-height 100vh
+    flex-direction column
+
+.row
+    clearfix()
+
+h1, h2, h3, h4, h5, h6
+    font-family $font-open-sans
+
+h1
+    h1()
+
+h2
+    h2()
+
+h3
+    h3()
+
+h4
+    h4()
+
+h5
+    h5()
+
+h5
+    h6()
+
+a
+    text-decoration none
+    color inherit
+
+strong
+    font-weight bold
+
+.img-responsive
+    display block
+    max-width 100%
+    height auto
+
+.img-alone
+    margin $element-margin auto
+
+.alert
+    margin $element-margin 0
+    padding 15px
+    border 1px solid transparent
+    border-radius $border-radius
+
+    &::after
+        content ""
+        display block
+        clear both
+
+    button
+        float right
+        margin 0
+        padding 0
+        line-height $line-height*1rem
+        border none
+        background none
+        font-size 1.5rem
+        font-weight 700
+        color $font-color
+        opacity 0.6
+        transition opacity 0.5s
+
+        &:hover
+            opacity 1
+
+.warning
+    alert-color(#fae77b , #fae46c, #f9df53)
+
+.notice
+    alert-color(#70c7fa , #62c1fa, #49b7f9, #ffffff)
+
+.error
+    alert-color(#e88074 , #e67467, #e26153, #ffffff)
+
+.success
+    alert-color(#7fdfa6 , #73dc9d, #5fd790, #ffffff)
+
+.divider
+    position relative
+    clear both
+    height 2px
+    margin ($element-margin * 2) 0
+    border 0
+    background $skin-color

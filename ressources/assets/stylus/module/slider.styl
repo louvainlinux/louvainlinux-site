@@ -1,0 +1,75 @@
+.slider
+    position relative
+    margin $element-margin 0
+
+    button
+        padding 0
+        background $skin-color
+        border none
+        border-radius 50%
+        color #ffffff
+        text-align center
+        opacity 0
+        z-index 1000
+        transition opacity $transition-duration, background $transition-duration
+
+        &:hover
+            background $skin-alternative-color
+
+    &:hover
+        button
+            opacity 0.8
+
+/** Item **/
+.slider-item
+    position relative
+
+    h2
+        position absolute
+        height 50px
+        bottom 0
+        left 0
+        right 0
+        margin 0
+        padding 10px 15px
+        background rgba(0, 0, 0, 0.7)
+        color #ffffff
+        font-size 1.1rem
+
+/** Arrows **/
+.slider-prev, .slider-next
+    position absolute
+    top 50%
+    width 40px
+    height 40px
+    transform translateY(-50%)
+
+.slider-prev
+    left 20px
+
+.slider-next
+    right 20px
+
+/** Pagination **/
+.slider-dots
+    position absolute
+    right 20px
+    bottom 10px
+    margin 0
+    list-style-type none
+
+    li
+        float left
+        margin-right 15px
+
+        &:last-child
+            margin-right 0
+
+        button
+            width 30px
+            height 30px
+            font-family $font-open-sans
+
+    .slick-active
+        button
+            background $skin-alternative-color
