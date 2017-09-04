@@ -11,11 +11,11 @@
  */
 
  module.exports = {
-    index
+    home,
  }
 
 /**
- * Display the index page of the website
+ * Display the home page of the website
  *
  * Options:
  *
@@ -29,6 +29,6 @@
  * @public
  */
 
-function index(req, res, next) {
-    res.render('pages/index', { title: 'Hey !', message: 'Hello there!' });
+function home(req, res, next) {
+    res.render('pages/home', {title: 'Accueil'});
 }

@@ -31,4 +31,4 @@ module.exports = router;
  * Pages controller routes
  */
 
-router.get('/', pagesController.index);
+router.get('/', pagesController.home);
