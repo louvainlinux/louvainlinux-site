@@ -61,8 +61,9 @@ app.use('/', routes);
  */
 
 app.use(function(req, res, next) {
-    var err = new Error('Page Not Found !');
+    var err = new Error('Page non trouvée');
     err.status = 404;
+    res.locals.title = 'Page non trouvée';
     next(err);
 });
 
@@ -76,8 +77,8 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
 
     if(res.status = 400) {
-        res.render('views/errors/400.pug');
+        res.render('errors/400.pug');
     } else {
-        res.render('views/errors/500.pug');
+        res.render('errors/500.pug');
     }
 });
