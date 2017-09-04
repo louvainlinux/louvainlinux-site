@@ -15,27 +15,32 @@
 
 const http = require('http');
 const app = require('../app');
-const defaultPort = require('../config/env').server.port;
+const serverOptions = require('../config/env').server;
 
 /**
- * Get port from environment and store in Express.
+ * Get port from environment and store in Express
  */
 
-let port = normalizePort(process.env.PORT || defaultPort);
+let port = normalizePort(serverOptions.port);
 app.set('port', port);
-console.error(port);
 
 /**
- * Create HTTP server.
+ * Tell to express that he run behind a proxy
+ */
+
+app.set('trust proxy', true);
+
+/**
+ * Create HTTP server
  */
 
 let server = http.createServer(app);
 
 /**
- * Listen on provided port, on all network interfaces
+ * Listen on provided port, on local interface
  */
 
-server.listen(port);
+server.listen(port, serverOptions.hostname);
 server.on('error', onError);
 server.on('listening', onListening);
 
