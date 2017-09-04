@@ -1,0 +1,75 @@
+extends ../layouts/default.pug
+
+block append meta
+  meta(name='description', content='Le Louvain-li-Nux a pour projet de défendre et de promouvoir les valeurs du logiciel libre à travers la communauté estudiantine, citadine et académique de Louvain-la-Neuve. Pour ce faire, nous organisons de nombreuses activités permettant aux participants de se rencontrer et d\'échanger autour de l\'informatique, tout en découvrant une pléthore d\'outils libres et, bien souvent, gratuits.')
+
+block content
+  //- Slider
+  section#home__slider.home__slider.slider
+    a.slider-item(href='/', title='Visite du Musée NAM-IP')
+      img.img-responsive(src='/uploads/namip-banner.png' alt='Visite du Musée NAM-IP')
+    img.slider-item.img-responsive(src='/uploads/membres-banner.png' alt='Membres du kot 2016-2017')
+
+  .divider
+
+  //- Description
+  h1.home__title Louvain-li-Nux, Kot-à-projet sur la promotion du Libre
+
+  p.home__description Le Louvain-li-Nux a pour projet de défendre et de promouvoir les valeurs du logiciel libre à travers la communauté estudiantine, citadine et académique de Louvain-la-Neuve. Pour ce faire, nous organisons de nombreuses activités permettant aux participants de se rencontrer et d'échanger autour de l'informatique, tout en découvrant une pléthore d'outils libres et, bien souvent, gratuits.
+
+  .home__contact
+    p Besoin d'aide, de conseils, d'informations ou simplement nous parler ?
+    a(href='mailto:info@louvainlinux.org', title='Nous contacter') Nous contacter
+
+  .divider
+
+  //- Features
+  section.home__features
+    .row
+      .home__feature
+        .home__feature__icon
+          i.fa.fa-users
+
+        .home__feature__text
+          h2 Install Party
+          p Tu as toujours rêvé d'avoir Linux sur ton PC ? Tu en as besoin pour tes cours ? Tu n'oses pas le faire tout seul ? Inutile d'attendre, viens nous voir à une de nos deux install party de l'année et nous t'aiderons à l'installer avec plaisir !
+
+      .home__feature
+        .home__feature__icon
+          i.fa.fa-terminal
+
+        .home__feature__text
+          h2 Permanences informatiques
+          p Si tu veux installer Linux sur ton ordi, que tu ne comprends pas comment fonctionne LaTeX, Git, OpenOffice ou que tu veux simplement discuter avec nous, passe chez nous un lundi soir de 18h30 à 22h en permanence, de la S2 à la S12.
+    .row
+      .home__feature
+        .home__feature__icon
+          i.fa.fa-slideshare
+
+        .home__feature__text
+          h2 Ateliers d'initiation
+          p Nous organisons différents ateliers d'initiation, tout au long de l'année, sur des logiciels libres très puissants. Par exemple LaTeX qui est un système de traitement de texte ou git, un outil collaboratif de gestion de version. Mais encore d'autres logiciels comme pour la création de musique libre et bien d'autres !
+      .home__feature
+        .home__feature__icon
+          i.fa.fa-microchip
+
+        .home__feature__text
+          h2 Location informatique
+          p Tu as besoin d’un ou de plusieurs ordinateurs pour ton acti ou projet (KAP, régionale, cercle ou ASBL uniquement) ? Tu peux emprunter nos ordinateurs. Nous avons à votre disposition des ordinateurs portables, fixes, des écrans, longs câbles VGA, claviers, souris, switches ainsi qu'un peu de matériel audio.
+
+    .row
+      .home__feature
+        .home__feature__icon
+          i.fa.fa-gamepad
+
+        .home__feature__text
+          h2 Geek Party
+          p Une soirée avec au programme, moultes jeux geeks dont des lans, des jeux de société, des jeux wii, ... Mais aussi des projections de séries, de la mal bouffe et une super ambiance ! Que vous soyez geek affirmé ou tout simplement motivé de passer une bonne soirée en notre compagnie, cet évènement est fait pour vous !
+
+      .home__feature
+        .home__feature__icon
+          i.fa.fa-commenting
+
+        .home__feature__text
+          h2 Système de vote par SMS
+          p Tu as toujours rêvé d'intégrer un système de vote par SMS à ton activité qui permettrait aux participants de voter par simple envoi d'un message à un numéro, comme pour le meilleur vélo des 24h ? Que ton acti soit petite ou grande, nous avons la solution pour toi (KAP, régionale, cercle ou ASBL uniquement) !
