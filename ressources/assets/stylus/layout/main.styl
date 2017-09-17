@@ -1,3 +1,15 @@
 .main
     flex 1 0 auto
     margin $element-margin 0
+    clearfix()
+
+.main__content
+    stack()
+
+    a
+        link($skin-color)
+
++above($desktop)
+    .main__content
+        unstack()
+        column(2/3)
