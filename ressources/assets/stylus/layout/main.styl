@@ -9,6 +9,29 @@
     a
         link($skin-color)
 
+// Contact rules
+
+.contact
+    p
+        text-align justify
+
+    a
+        link($skin-color)
+
+.openstreetmap
+    position relative
+    margin $element-margin 0
+    padding-bottom 47.5%
+    height 0
+    overflow hidden
+
+.openstreetmap iframe
+    position absolute
+    top 0
+    left 0
+    width 100% !important
+    height 100% !important
+
 +above($desktop)
     .main__content
         unstack()
