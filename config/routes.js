@@ -32,3 +32,5 @@ module.exports = router;
  */
 
 router.get('/', pagesController.home);
+router.get('/**/:name', pagesController.display);
+router.get('/:name', pagesController.display);
