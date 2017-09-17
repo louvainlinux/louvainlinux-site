@@ -61,9 +61,8 @@ app.use('/', routes);
  */
 
 app.use(function(req, res, next) {
-    var err = new Error('Page non trouvée');
+    var err = new Error('Page non trouvée :(');
     err.status = 404;
-    res.locals.title = 'Page non trouvée';
     next(err);
 });
 
