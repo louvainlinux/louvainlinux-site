@@ -162,3 +162,4 @@ fabric.properties
 ### App ###
 public/**/*
 !public/**/.gitkeep
+!public/uploads
