@@ -4,30 +4,30 @@ header.header
     svg(x='0', y='0', width='54px', height='54px', viewBox='0 0 54 54')
       circle(cx='27', cy='27', r='25')
 
-  a.header__logo(href='/', title="Louvain-li-Nux")
-    img(src='images/logo.png', alt='Tux')
+  a.header__logo(href='/', title='Louvain-li-Nux')
+    img(src='/images/logo.png', alt='Tux')
     span Louvain-li-Nux
 
   nav.menu
     ul
-      li #[a.menu__link(href='/', title="Accueil") Accueil]
+      li #[a.menu__link(href='/', title='Accueil') Accueil]
       li
-        span.menu__link(href='/', title="Le projet") Le projet
+        span.menu__link Le projet
         ul
-          li #[a.menu__sublink(href='/', title="Qui sommes-nous ?") Qui sommes-nous ?]
-          li #[a.menu__sublink(href='/', title="Membres") Membres]
-          li #[a.menu__sublink(href='/', title="Foire aux questions") Foire aux questions]
+          li #[a.menu__sublink(href='/projet/a-propos', title='Qui sommes-nous ?') Qui sommes-nous ?]
+          li #[a.menu__sublink(href='/projet/membres', title='Membres') Membres]
+          li #[a.menu__sublink(href='/projet/faq', title='Foire aux questions') Foire aux questions]
       li
-        span.menu__link(href='/', title="Activités") Activités
+        span.menu__link Activités
         ul
-          li #[a.menu__sublink(href='/', title="Install Party") Install Party]
-          li #[a.menu__sublink(href='/', title="Atelier LaTeX") Atelier LaTeX]
-          li #[a.menu__sublink(href='/', title="Atelier Git") Atelier Git]
-          li #[a.menu__sublink(href='/', title="NAM-IP") NAMP-IP]
+          li #[a.menu__sublink(href='/activites/install-party', title='Install Party') Install Party]
+          li #[a.menu__sublink(href='/activites/atelier-latex', title='Atelier LaTeX') Atelier LaTeX]
+          li #[a.menu__sublink(href='/activites/atelier-git', title='Atelier Git') Atelier Git]
+          li #[a.menu__sublink(href='/activites/nam-ip', title='NAM-IP') NAM-IP]
       li
-        span.menu__link(href='/', title="Services") Services
+        span.menu__link(href='/', title='Services') Services
         ul
-          li #[a.menu__sublink(href='/', title="Permanences") Permanences]
-          li #[a.menu__sublink(href='/', title="Location informatique") Location informatique]
-          li #[a.menu__sublink(href='/', title="Système de vote par SMS") Système de vote par SMS]
-      li #[a.menu__link(href='mailto:info@louvainlinux.org', title="Nous contacter") Nous contacter]
+          li #[a.menu__sublink(href='/services/permanences', title='Permanences') Permanences]
+          li #[a.menu__sublink(href='/services/locations', title='Location informatique') Locations informatique]
+          li #[a.menu__sublink(href='/services/vote-sms', title='Système de vote par SMS') Système de vote par SMS]
+      li #[a.menu__link(href='/nous-contacter', title='Nous contacter') Nous contacter]
