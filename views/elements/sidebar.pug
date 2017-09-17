@@ -1,0 +1,31 @@
+aside.sidebar
+  h3 Liens similaires
+
+  if type == 'projet'
+    a.sidebar__link(href='/projet/a-propos', title='Qui sommes-nous ?') Qui sommes-nous ?
+    a.sidebar__link(href='/projet/membres', title='Membres') Membres
+    a.sidebar__link(href='/projet/faq', title='Foire aux questions') Foire aux questions
+  else if type == 'activites'
+    a.sidebar__link(href='/activites/install-party', title='Install Party') Install Party
+    a.sidebar__link(href='/activites/atelier-latex', title='Atelier LaTeX') Atelier LaTeX
+    a.sidebar__link(href='/activites/atelier-git', title='Atelier Git') Atelier Git
+    a.sidebar__link(href='/activites/nam-ip', title='NAM-IP') NAM-IP
+  else if type == 'services'
+    a.sidebar__link(href='/services/permanences', title='Permanences informatiques') Permanences informatiques
+    a.sidebar__link(href='/services/locations', title='Location informatique') Location informatique
+    a.sidebar__link(href='/services/vote-sms', title='Système de vote par SMS') Système de vote par SMS
+
+  .divider
+
+  h3 Ressources utiles
+  a.sidebar__link(href='https://github.com/louvainlinux', title='Documents liés aux ateliers') Documents liés aux ateliers
+  a.sidebar__link(href='https://github.com/louvainlinux/fiches-info', title='Fiches infos') Fiches infos
+
+  .divider
+
+  h3 À propos de nous
+  p
+    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at diam risus.
+    | Donec sed ligula mollis, dignissim sapien sit amet, pulvinar nibh. Ut convallis enim vel euismod tempor.
+    | Phasellus nec tincidunt erat. Praesent porta sapien non odio ornare aliquet.
+  a.sidebar__link(href='/nous-contacter', title='Envoyez nous un message') Envoyez nous un message

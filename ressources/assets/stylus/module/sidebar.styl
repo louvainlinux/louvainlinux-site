@@ -1,0 +1,30 @@
+/*
+ * louvainlinux-site
+ * GPL-3.0 License
+ */
+
+.sidebar
+    margin-top $element-margin*2
+    stack()
+
+    h3
+        &:first-child
+            margin-top 0
+
+    .divider
+        margin $element-margin 0
+
+.sidebar__link
+    display block
+    line-height 2.4em
+    font-weight 600
+    transition color $transition-duration
+
+    &:hover
+        color $skin-color
+
++above($desktop)
+    .sidebar
+        margin-top 0
+        unstack()
+        column(1/3)
