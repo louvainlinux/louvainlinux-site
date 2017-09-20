@@ -160,6 +160,6 @@ fabric.properties
 # *.ipr
 
 ### App ###
-public/**/*
-!public/**/.gitkeep
-!public/uploads
+#public/**/*
+#!public/**/.gitkeep
+#!public/uploads

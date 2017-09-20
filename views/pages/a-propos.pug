@@ -13,11 +13,26 @@ block append meta
 
 block content
   section.main__content
-    img.img-responsive(src='http://via.placeholder.com/940x400' alt='Image optionnelle')
+    //img.img-responsive(src='http://via.placeholder.com/940x400' alt='Image optionnelle')
 
     h1 #{title}
 
-    p Site en construction
+    p
+        | Le Louvain-li-Nux est un #[a(href="http://www.kapuclouvain.be") kot-à-projet]
+        | qui a pour projet de défendre et de promouvoir les valeurs du logiciel libre à travers la communauté estudiantine, citadine et académique de Louvain-la-Neuve. Pour ce faire, nous organisons de nombreuses activités permettant aux participants de se rencontrer et d'échanger autour de l'informatique, tout en découvrant une pléthore d'outils libres et, bien souvent, gratuits.
+
+    p Nous pensons que la connaissance est la clé pour libérer le consommateur du joug des abus de position dominante et de techniques commerciales douteuses, frôlant le non respect de droits les plus élémentaires du consommateur.  
+
+    p Dans cette optique, nous nous plaisons à rappeler que l'informatique libre est celle qui :
+    ul
+        li Donne le droit aux gens d'utiliser leurs outils comme bon leur semble;
+        li Donne le droit aux gens d'accéder au code source (la recette) afin de l'étudier et de le comprendre;
+        li Donne le droit aux gens de modifier le code source pour n'importe quel usage ou pour l'améliorer;
+        li Donne le droit aux gens de redistribuer le logiciel, pour peu que le code source reste accessible.
+
+    p Ces quatre conditions sont indissociables pour préserver la liberté d'un logiciel et n'excluent en aucun cas toute forme de commerce. Notez aussi que d'autres variantes encore plus libres existent, ainsi que d'autres un peu plus liberticides et que pour expliquer clairement ces états de faits, il nous faudrait reprendre nombreux articles ou même donner un cours magistral sur la question.
+
+    p Pour mieux comprendre les réels enjeux et le lourd impact des licences dans l'informatique et ce qu'elle influence directement (monde de l’entreprise, vie privé, monde du handicap, recherche scientifique, éducation, etc.), nous vous invitons à en discuter avec nous lors de nos activités, de nos permanences ou au kot, tout simplement !
 
   //- Include sidebar following the type ('projet', 'activites', 'services')
   +sidebar('projet')
