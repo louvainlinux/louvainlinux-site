@@ -160,4 +160,5 @@ gulp.task('serve', ['browser-sync'], function () {
     gulp.watch('views/**/*.pug', ['pug']);
 });
 
-gulp.task('default', ['serve']);
+gulp.task('deploy', ['stylus', 'scripts', 'images']);
+gulp.task('default', ['deploy']);
