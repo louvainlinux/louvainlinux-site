@@ -5,25 +5,24 @@ include ../mixins/sidebar.pug
 
 //- Set variables for the layout
 block append variables
-  - var title = 'Permanences informatique'
+    - var title = 'Permanences informatique'
 
 //- Set specific page's metas like description, keyword, ...
 block append meta
-  meta(name='description', content='Description de la page')
+    meta(name='description', content='Description de la page')
 
 block content
-  section.main__content
-    //img.img-responsive(src='/uploads/ubuntu-logo.jpg' alt='Ubuntu')
+    section.main__content
+        img.img-responsive(src='/uploads/ubuntu-logo.jpg' alt='Ubuntu')
 
-    h1 #{title}
+        h1 #{title}
+        p Vous rencontrez un problème avec votre ordinateur alors que vous utilisez Ubuntu ou une autre distribution GNU/Linux ? Vous souhaitez utiliser un système alternatif à Windows ou Mac OS ? Rendez-vous chez nous lors de nos permanences pour obtenir gratuitement de l’aide !
+        p Les permanences ont lieu chaque lundi entre 18h30 et 22h00, durant les semaines de cours. Apportez simplement votre machine et expliquez-nous votre problème. Nous vous assisterons et le réglerons dans les limites de nos connaissances. Si nous ne parvenons pas à vous aider, nous vous conseillerons sur la meilleure façon de résoudre votre problème après l’avoir identifié.
+        p
+           ul 
+               li Lieu : Rue Constantin Meunier 12, 1348 Louvain-la-Neuve
+               li Quand : chaque lundi entre 18h30 et 22h00, durant les semaines de cours.
+               li Quoi : Assistance informatique et conseils en logiciels et solutions libres.
 
-    p Vous rencontrez un problème avec votre ordinateur alors que vous utilisez Ubuntu ou une autre distribution GNU/Linux ? Vous souhaitez utiliser un système alternatif à Windows ou Mac OS ? Rendez-vous chez nous lors de nos permanences pour obtenir gratuitement de l’aide !
-    p Les permanences ont lieu chaque lundi entre 18h30 et 22h00, durant les semaines de cours. Apportez simplement votre machine et expliquez-nous votre problème. Nous vous assisterons et le réglerons dans les limites de nos connaissances. Si nous ne parvenons pas à vous aider, nous vous conseillerons sur la meilleure façon de résoudre votre problème après l’avoir identifié.
-
-   ul 
-       li Lieu : Rue Constantin Meunier 12, 1348 Louvain-la-Neuve
-       li Quand : chaque lundi entre 18h30 et 22h00, durant les semaines de cours.
-       li Quoi : Assistance informatique et conseils en logiciels et solutions libres.
-
-  //- Include sidebar following the type ('projet', 'activites', 'services')
-  +sidebar('services')
+    //- Include sidebar following the type ('projet', 'activites', 'services')
+    +sidebar('services')
