@@ -31,7 +31,7 @@ Make the deployment steps, and then (in the `site` directory) run `gulp serve`.
 2. Edit the required file
 3. Test on local machine
 4. Commit and push to github
-5. On the VPS, `git pull` and restart the service:
+5. On the VPS, `cd /var/www/louvainlinux`, `git pull` and restart the service:
 ```sh
 # systemctl restart site_llnux.service
 ```
