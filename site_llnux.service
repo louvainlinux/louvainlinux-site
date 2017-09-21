@@ -1,0 +1,12 @@
+[Service]
+ExecStart=/usr/bin/node /var/www/louvainlinux/bin/proxy
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=site_llnux
+User=www
+Group=www
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
