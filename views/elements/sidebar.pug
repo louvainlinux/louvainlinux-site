@@ -1,30 +1,45 @@
 aside.sidebar
-  h3 Liens similaires
+  //h3 Liens similaires
 
-  if type == 'projet'
-    a.sidebar__link(href='/projet/a-propos', title='Qui sommes-nous ?') Qui sommes-nous ?
-    a.sidebar__link(href='/projet/membres', title='Membres') Membres
-    a.sidebar__link(href='/projet/faq', title='Foire aux questions') Foire aux questions
-  else if type == 'activites'
-    a.sidebar__link(href='/activites/install-party', title='Install Party') Install Party
-    a.sidebar__link(href='/activites/atelier-latex', title='Atelier LaTeX') Atelier LaTeX
-    a.sidebar__link(href='/activites/atelier-git', title='Atelier Git') Atelier Git
-    a.sidebar__link(href='/activites/nam-ip', title='NAM-IP') NAM-IP
-  else if type == 'services'
-    a.sidebar__link(href='/services/permanences', title='Permanences informatiques') Permanences informatiques
-    a.sidebar__link(href='/services/locations', title='Location informatique') Location informatique
-    a.sidebar__link(href='/services/vote-sms', title='Système de vote par SMS') Système de vote par SMS
+  //if type == 'projet'
+  //  a.sidebar__link(href='/projet/a-propos', title='Qui sommes-nous ?') Qui sommes-nous ?
+  //  a.sidebar__link(href='/projet/membres', title='Membres') Membres
+  //  a.sidebar__link(href='/projet/faq', title='Foire aux questions') Foire aux questions
+  //else if type == 'activites'
+  //  a.sidebar__link(href='/activites/install-party', title='Install Party') Install Party
+  //  a.sidebar__link(href='/activites/atelier-latex', title='Atelier LaTeX') Atelier LaTeX
+  //  a.sidebar__link(href='/activites/atelier-git', title='Atelier Git') Atelier Git
+  //  a.sidebar__link(href='/activites/nam-ip', title='NAM-IP') NAM-IP
+  //else if type == 'services'
+  //  a.sidebar__link(href='/services/permanences', title='Permanences informatiques') Permanences informatiques
+  //  a.sidebar__link(href='/services/locations', title='Location informatique') Location informatique
+  //  a.sidebar__link(href='/services/vote-sms', title='Système de vote par SMS') Système de vote par SMS
 
-  .divider
+  //.divider
 
   h3 Ressources utiles
-  a.sidebar__link(href='https://github.com/louvainlinux', title='Documents liés aux ateliers') Documents liés aux ateliers
+  //a.sidebar__link(href='https://github.com/louvainlinux', title='Documents liés aux ateliers') Documents liés aux ateliers
+  //a.sidebar__link(href='https://github.com/louvainlinux', title='Documents liés aux ateliers') Documents liés aux ateliers
   a.sidebar__link(href='https://github.com/louvainlinux/fiches-info', title='Fiches infos') Fiches infos
+  a.sidebar__link(href='https://github.com/louvainlinux/atelier-latex/raw/master/main.pdf', title='Slides atelier LaTeX') Slides atelier LaTeX
+  a.sidebar__link(href='https://github.com/louvainlinux/atelier-latex/raw/master/main.pdf', title='Slides atelier Git') Slides atelier Git
 
   .divider
 
   h3 À propos de nous
   p
         | Le Louvain-li-Nux est un #[a(href="http://www.kapuclouvain.be") kot-à-projet]
-        | qui a pour projet de défendre et de promouvoir les valeurs du logiciel libre à travers la communauté estudiantine, citadine et académique de Louvain-la-Neuve. Pour ce faire, nous organisons de nombreuses activités permettant aux participants de se rencontrer et d'échanger autour de l'informatique, tout en découvrant une pléthore d'outils libres et, bien souvent, gratuits.
+        | qui a pour projet de défendre et de promouvoir les valeurs du
+        | logiciel libre à travers la communauté estudiantine, citadine et
+        | académique de Louvain-la-Neuve. Pour ce faire, nous organisons de
+        | nombreuses activités permettant aux participants de se rencontrer et
+        | d'échanger autour de l'informatique, tout en découvrant une pléthore
+        | d'outils libres et, bien souvent, gratuits.
   a.sidebar__link(href='/nous-contacter', title='Envoyez nous un message') Envoyez nous un message
+
+  .divider
+
+  h3  Ailleurs sur le web...
+  a.sidebar__link(href='http://www.kapuclouvain.be', title='Portail des Kots à projet') Portail des Kots à projet
+  a.sidebar__link(href='https://framasoft.org/', title='Association framasoft') Association framasoft: promotion du libre
+
