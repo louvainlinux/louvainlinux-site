@@ -1,0 +1,26 @@
+extends ../layouts/default.pug
+
+//- Import mixins
+include ../mixins/sidebar.pug
+
+//- Set variables for the layout
+block append variables
+  - var title = 'Semaine Wikipédia'
+
+//- Set specific page's metas like description, keyword, ...
+block append meta
+  meta(name='description', content='Description de la page')
+
+block content
+  section.main__content
+    img.img-responsive(src='http://via.placeholder.com/940x400' alt='Semaine Wikipédia')
+
+    h1 #{title}
+
+    p Vous trouverez ci-dessous toutes les informations relatives à la semaine Wikipédia que nous organisons en collaboration avec l'UCL.
+
+    p Site en construction.
+    
+
+  //- Include sidebar following the type ('projet', 'activites', 'services')
+  +sidebar('activites')
