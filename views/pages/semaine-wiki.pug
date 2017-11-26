@@ -12,7 +12,7 @@ block append meta
   meta(name='description', content='Description de la page')
 
 block content
-  section.main__content	
+  section.main__content
 
     h1 #{title}
 
@@ -21,6 +21,6 @@ block content
         li Lundi 27 novembre 2017 de #[strong 14h00 à 18h00]
         li Mercredi 29 novembre 2017 de #[strong 16h30 à 20h30]
         li Jeudi 30 novembre 2017 de #[strong 18h30 à 22h30]
-    
+       
   //- Include sidebar following the type ('projet', 'activites', 'services')
   +sidebar('activites')
