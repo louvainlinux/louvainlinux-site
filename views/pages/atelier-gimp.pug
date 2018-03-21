@@ -1,0 +1,38 @@
+extends ../layouts/default.pug
+
+//- Import mixins
+include ../mixins/sidebar.pug
+
+//- Set variables for the layout
+block append variables
+  - var title = 'Atelier Gimp'
+
+//- Set specific page's metas like description, keyword, ...
+block append meta
+  meta(name='description', content='Description de la page')
+
+block content
+  section.main__content
+    img.img-responsive(src='/uploads/affiche-gimp-banner.png' alt='Logo Gimp')
+
+    h1 #{title}
+
+    p GIMP (GNU Image Manipulation Program) est un outil d'édition et de retouche d'image. Son objectif final est proche de celui d'Adobe Photoshop: la retouche et l'édition d'image, le dessin à main levée, réajuster, rogner, photomontages, convertir entre différents formats d'image, et plus de tâches spécialisées. À l'instar de Photoshop, GIMP est un logiciel libre, gratuit et disponibles sur toutes les platformes (Windows, macOS et Linux). 
+
+    p Notre atelier vous présentera les rudimentaux de GIMP
+
+    p Habituellement, l'atelier est organisé une fois par quadrimestre universitaire (en général en S3): début octobre et fin février.
+
+    p Information pratiques:
+        
+        ul
+            li L'atelier est organisé dans les salles informatiques de l'UCL, vous pouvez donc utiliser les ordinateurs de ces salles si vous possédez un identifiant UCL. Dans le cas contraire, veuillez amener un ordinateur.
+            li La participation est gratuite, mais pour des questions d'organisation l'inscription est obligatoire (vous pouvez vous désinscrire à tout moment en nous envoyant un mail). Un lien vers le formulaire d'inscription sera publié sur cette page deux ou trois semaines avant le prochain atelier.
+            li Les dates des ateliers sont annoncées en général trois semaines avant l'activité.
+
+    p Le prochain atelier aura lieu le #[strong jeudi 29 mars 2018 aux salles SOCR 31-32-33] 
+
+    p Pour vous inscrire à l'atelier veuillez compléter le #[a(href='https://framaforms.org/atelier-gimp-q2-20172018-1521417879') Formulaire d'inscription].
+
+  //- Include sidebar following the type ('projet', 'activites', 'services')
+  +sidebar('activites')
