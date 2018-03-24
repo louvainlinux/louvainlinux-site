@@ -5,7 +5,7 @@ include ../mixins/sidebar.pug
 
 //- Set variables for the layout
 block append variables
-  - var title = 'NAM-IP'
+  - var title = 'Visite du musée de l\'informatique NAM-IP'
 
 //- Set specific page's metas like description, keyword, ...
 block append meta
@@ -16,14 +16,32 @@ block content
     img.img-responsive(src='/uploads/namip-940px.png' alt='Visite du Musée NAM-IP')
 
     h1 #{title}
-
-    p #[strong Cette activitée n'a lieux qu'au second quadrimestre, aucune date n'est encore prévue !]
-    p Le Louvain-li-Nux t'emmène à une visite guidée de NAM-IP, le musée de l'informatique pionnière belge à Namur. Si tu es intéressé.e d'histoire, d'informatique et/ou de technologie, cette visite est faite pour toi.
+    
+    p #[strong Cette activitée aura lieu de Mercredi 25 avril de 18 à 20h]
+    p Le Louvain-li-Nux t'emmène à une visite guidée de NAM-IP, le musée de l'informatique pionnière belge à Namur. Si tu es intéressé(e) d'histoire, d'informatique et/ou de technologie, cette visite est faite pour toi !
     p Le musée est entièrement dédié à l'histoire de l'informatique, depuis les temps anciens, en passant par les traitements en cartes perforées, les ordinateurs grands et petits, pour aboutir aux tablettes et téléphones intelligents et laisser entrevoir le futur. En plus d'une visite guidée, nous aurons l'occasion de voir certaines de ces anciennes machines en fonctionnement.
-    p La visite coûte 6€, commence à 18h et dure 2h. Rendez-vous à 17h45 sur place, ou à 16h45 au parking de l'Aldi pour le covoiturage.
-    p Si ça te tente, inscrit-toi sur le Google Form : #[a(href="", title="Indisponible") Indisponible]. Pour le payement, tu peux virer l'argent sur le compte BE03 0017 1440 5884 avec NOM PRENOM comme communication (Si vous venez à plusieurs, faites un virement par personne de préférence ! :-) ), ou venir à notre kot sur les temps de midi (Rue Constantin Meunier 12, 1348 Louvain-la-Neuve, dans les bruyères).
-    p #[strong Attention] : l'inscription n'est validée que lorsque le payement est reçu. Les places sont limitées, donc dépèche-toi :)
     p #[strong Note] : la salle d'exposition est accessible aux personnes à mobilité réduite :)
 
+    h4 Informations pratiques
+    
+    p    
+        ul
+            li Inscription obligatoire : #[a(href='https://framaforms.org/visite-nam-ip-louvain-li-nux-1521419977') Formulaire d'inscription]
+            li durée de la visite : 2h (de 18 à 20h)
+            li PAF : 8€
+            ul
+                li Sur notre compte (#[strong BE03 0017 1440 5884]) avec en communication "Nam-IP - NOM PRENOM, nombre de places" 
+                li En liquide, en passant à notre kot (#[strong 12 Rue Constantin Meunier]), sur un temps de midi ou après 18h
+    
+        p #[strong Attention] : l'inscription ne sera validée qu'une fois le payement reçu. Les places sont limitées, donc dépèche-toi ;-)
+    
+    h4 Rendez-vous 
+    
+    p    
+        ul
+            li #[strong A Louvain-la-Neuve] : 16h45 à notre kot (12 rue Constantin Meunier)
+            li #[strong A Namur] : 17h45 au musée (192A Rue Henri Blès, Namur)
+    
+    
   //- Include sidebar following the type ('projet', 'activites', 'services')
   +sidebar('activites')

@@ -3,7 +3,7 @@
   "description": "Website of the Louvain-li-Nux KAP",
   "main": "app.js",
   "authors": [
-    "Denis Pettens <denis.pettens@gmail.com>"
+    "Louvain-li-Nux <info@louvainlinux.org>"
   ],
   "license": "GPL-3.0",
   "homepage": "https://github.com/syvido/louvainlinux-site",

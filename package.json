@@ -2,7 +2,7 @@
   "name": "louvainlinux-site",
   "version": "0.2.0",
   "description": "Website of the Louvain-li-Nux KAP",
-  "author": "Denis Pettens <denis.pettens@gmail.com>",
+  "author": "Louvain-li-Nux <info@louvainlinux.org>",
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
