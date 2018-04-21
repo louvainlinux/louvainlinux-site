@@ -1,0 +1,24 @@
+extends ../layouts/default.pug
+
+//- Import mixins
+include ../mixins/sidebar.pug
+
+//- Set variables for the layout
+block append variables
+  - var title = 'Conférences'
+
+//- Set specific page's metas like description, keyword, ...
+block append meta
+  meta(name='description', content='Nos conférences')
+
+block content
+  section.main__content
+    img.img-responsive(src='/uploads/affiche-open-science.jpg' alt='Affiche conférence Open Science')
+
+    h1 #{title}
+    
+    p La prochaine conférence du Louvain-li-Nux portera sur le thème de #[a(href='https://fr.wikipedia.org/wiki/Science_ouverte') l'Open Science]. Pour résumer, l'Open science regroupe différentes idées et techniques qui sont liées à l'applition des principes du libre à la recherche scientifique.
+    p La conférence aura lieu le mercredi 9 mai 2018 de 16h30 à 18h (#[a(href='https://www.openstreetmap.org/way/193297226') auditoire Agora 04]).
+    
+  //- Include sidebar following the type ('projet', 'activites', 'services')
+  +sidebar('activites')
