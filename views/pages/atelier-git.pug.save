@@ -21,11 +21,7 @@ block content
 
     p Le prochain atelier-latex aura lieu #[strong le jeudi premier mars 2018 au CANDIX].  
     
-<<<<<<< HEAD
-    p L'inscription est obligatoire, pour des questions d'organisation (c'est 100% gratuit, et vous pouvez vous désinscrire à tout moment en nous envoyant un mail).  #[a(href='https://framaforms.org/atelier-git-q2-20172018-1518549154') Inscription Git].
-=======
-    p L'inscription est obligatoire, pour des questions d'organisation (c'est 100% gratuit, et vous pouvez vous désinscrire à tout moment en nous envoyant un mail).  #[a(href='https://framaforms.org/atelier-git-q2-20172018-1518549154') Formulaire d'inscription].
->>>>>>> 62ce30587ec4ca9e6b0e7767c1b5604cc7e79617
+ // p L'inscription est obligatoire, pour des questions d'organisation (c'est 100% gratuit, et vous pouvez vous désinscrire à tout moment en nous envoyant un mail).  #[a(href='https://framaforms.org/atelier-git-q2-20172018-1518549154') Inscription Git].
 
     P Télécharger les slides utilisés durant la scéance : #[a(href='https://raw.githubusercontent.com/louvainlinux/atelier-git/release/src/main.pdf') slides
 
