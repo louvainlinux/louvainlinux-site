@@ -1,0 +1,37 @@
+extends ../layouts/default.pug
+
+//- Import mixins
+include ../mixins/sidebar.pug
+
+//- Set variables for the layout
+block append variables
+  - var title = 'Game-Jam'
+
+//- Set specific page's metas like description, keyword, ...
+block append meta
+  meta(name='description', content='Description de la page')
+
+block content
+  section.main__content
+    img.img-responsive(src='/uploads/game_jam.jpg' alt='Game-Jam')
+
+    h1 #{title}
+
+    p L’univers de l’informatique vous intrigue ? Vous souhaitez apprendre à programmer ? Vous vous demandez comment contribuer à un projet libre ? Ou êtes-vous peut-être simplement curieux ? Toutes les raisons sont bonnes pour apprendre à coder !
+
+    p La Game-Jam est l’occasion de découvrir les rudiments de la programmation lors d’une initiation ludique à thème. Apprenez à concevoir vos premiers programmes dans une ambiance conviviale et pédagogique. Aucun prérequis ou matériel nécessaire, venez comme vous êtes : tout le monde part de zéro.
+
+    p Au programme : langage Python, introduction aux principes fondamentaux de la programmation, réalisation d'un mini jeu vidéo (autant pour les novices que pour ceux qui ont déjà de l'expérience), et l’occasion idéale de découvrir le monde de l’informatique !
+    
+    p #[Strong Informations pratique :]
+    
+    ul
+      li La Game-Jam commence en fin d’après-midi et se termine en fin de soirée. Elle se déroule au Louvain-li-Nux (12, rue Constantin Meunier, 1348 Ottignies-Louvain-la-Neuve).
+      li Un repas payant peut être proposé pour ceux qui le souhaitent.
+      li Par soucis d’organisation, chaque participant devra créer un compte sur Github si ce n’est pas déjà fait. Il est plus simple pour nous si vous venez avec votre ordinateur portable, avec Atom, Python 3 et Pygame installés.
+      li La participation est gratuite, mais nous limitons le nombre d’inscriptions afin de préserver la qualité de l’activité. Un formulaire d’inscription est publié sur cette page dans les semaines précédents l’événement.
+
+    p #[strong Actuellement les inscription sont clôturées car toutes les places disponibles ont été prises !]
+
+  //- Include sidebar following the type ('projet', 'activites', 'services')
+  +sidebar('activites')
